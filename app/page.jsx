@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-        <div className="flex flex-col gap-24 sm:gap-32 pb-20">
+        <div className="flex flex-col gap-24 sm:gap-32 pb-20" style={{ backgroundImage: "url('/images/hero-bg.svg')", backgroundAttachment: "fixed", backgroundSize: "cover", backgroundPosition: "center" }}>
             {/* Hero Section */}
             <section className="container mx-auto px-6 pt-32 pb-16 flex flex-col justify-center items-start min-h-[70vh]">
                 <p className="text-cyan-400 font-mono mb-4 text-lg">Hi, my name is</p>
@@ -112,11 +112,7 @@ export default function Page() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl">
                     <div className="bg-zinc-900/50 border border-white/10 rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group">
-                        <div className="flex justify-between items-center mb-6">
-                            <svg className="w-10 h-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
-                        </div>
+                        <img src="/images/project-materials.svg" alt="Material Analysis" className="w-full h-auto rounded mb-6 border border-white/10 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
                         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
                             Material Analysis & Laminate
                         </h3>
@@ -130,12 +126,7 @@ export default function Page() {
                     </div>
                     
                     <div className="bg-zinc-900/50 border border-white/10 rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group">
-                        <div className="flex justify-between items-center mb-6">
-                            <svg className="w-10 h-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
+                        <img src="/images/project-gearbox.svg" alt="Gearbox Fault Diagnosis" className="w-full h-auto rounded mb-6 border border-white/10 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
                         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
                             Gearbox Fault Diagnosis
                         </h3>
@@ -149,11 +140,7 @@ export default function Page() {
                     </div>
 
                     <div className="bg-zinc-900/50 border border-white/10 rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group">
-                        <div className="flex justify-between items-center mb-6">
-                            <svg className="w-10 h-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
-                        </div>
+                        <img src="/images/project-molding.svg" alt="Blow Molding Die Design" className="w-full h-auto rounded mb-6 border border-white/10 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
                         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
                             Blow Molding Die Design
                         </h3>
@@ -167,11 +154,7 @@ export default function Page() {
                     </div>
 
                     <div className="bg-zinc-900/50 border border-white/10 rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group">
-                        <div className="flex justify-between items-center mb-6">
-                            <svg className="w-10 h-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
-                            </svg>
-                        </div>
+                        <img src="/images/project-machining.svg" alt="Metal Cutting Analysis" className="w-full h-auto rounded mb-6 border border-white/10 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
                         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
                             Metal Cutting Analysis
                         </h3>
