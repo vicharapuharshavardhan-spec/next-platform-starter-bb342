@@ -1,0 +1,24 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="100%" height="100%" fill="#18181b"/>
+  <defs>
+    <g id="gear">
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#22d3ee" stroke-width="12"/>
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#38bdf8" stroke-width="6"/>
+      <!-- Teeth -->
+      <path d="M -10 -51 L -6 -65 L 6 -65 L 10 -51 Z M -10 51 L -6 65 L 6 65 L 10 51 Z M -51 -10 L -65 -6 L -65 6 L -51 10 Z M 51 -10 L 65 -6 L 65 6 L 51 10 Z" fill="#22d3ee"/>
+      <path d="M -30 -42 L -38 -52 L -30 -60 L -22 -52 Z M 30 42 L 38 52 L 30 60 L 22 52 Z M -42 30 L -52 38 L -60 30 L -52 22 Z M 42 -30 L 52 -38 L 60 -30 L 52 -22 Z" fill="#22d3ee"/>
+    </g>
+  </defs>
+  <g transform="translate(150, 150)">
+    <use href="#gear" />
+  </g>
+  <g transform="translate(265, 105) rotate(22.5)">
+    <use href="#gear" />
+  </g>
+  <g transform="translate(220, 260) rotate(11.25) scale(0.8)">
+    <use href="#gear" opacity="0.6"/>
+  </g>
+  <!-- Sound waves -->
+  <path d="M 170 140 Q 80 140 100 170 T 150 170" fill="none" stroke="#38bdf8" stroke-width="4" opacity="0.4"/>
+  <path d="M 180 120 Q 50 120 80 180 T 140 180" fill="none" stroke="#38bdf8" stroke-width="4" opacity="0.2"/>
+</svg>

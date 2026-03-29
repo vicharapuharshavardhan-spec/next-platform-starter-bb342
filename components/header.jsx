@@ -1,44 +1,39 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import netlifyLogo from 'public/netlify-logo.svg';
-import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
     { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' },
-    { linkText: 'Middleware', href: '/middleware' },
-    { linkText: 'Routing', href: '/routing' }
+    { linkText: 'Skills', href: '#skills' },
+    { linkText: 'Experience', href: '#experience' },
+    { linkText: 'Projects', href: '#projects' },
+    { linkText: 'Education', href: '#education' },
+    { linkText: 'Contact', href: '#contact' }
 ];
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
-            <Link href="/">
-                <Image src={netlifyLogo} alt="Netlify logo" />
-            </Link>
-            {!!navItems?.length && (
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
-                    {navItems.map((item, index) => (
-                        <li key={index}>
-                            <Link href={item.href} className="inline-flex px-1.5 py-1 sm:px-3 sm:py-2">
-                                {item.linkText}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
-            <Link
-                href="https://github.com/netlify-templates/next-platform-starter"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-auto"
-            >
-                <Image src={githubLogo} alt="GitHub logo" className="w-7" />
-            </Link>
-        </nav>
+        <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-zinc-950/80 border-b border-white/10">
+            <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+                <Link href="/" className="text-xl font-bold tracking-tight text-white transition hover:text-cyan-400">
+                    Portfolio.
+                </Link>
+                
+                {!!navItems?.length && (
+                    <nav>
+                        <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium hidden md:flex">
+                            {navItems.map((item, index) => (
+                                <li key={index}>
+                                    <Link 
+                                        href={item.href} 
+                                        className="text-zinc-400 transition-colors hover:text-white"
+                                    >
+                                        {item.linkText}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                )}
+            </div>
+        </header>
     );
 }
